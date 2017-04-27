@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="example" namespace="/" extends="struts-default,json-default">
+		<action name="Login" class="csai.action.LoginAction">
+			<result name="success">/index.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+		<action name="GetMenuList" class="csai.action.ListAction">
+			<!-- <result name="SUCCESS"></result> -->
+			<result type="json" name="SUCCESS">
+				<param name="menu">jsonMenuList</param>
+				<!-- <param name="root">jsonMenuList</param> -->
+			</result>
+		</action>
+		<action name="GetLeftMenuList" class="csai.action.LeftListAction">
+			<!-- <result name="SUCCESS"></result> -->
+			<result name="SUCCESS">
+			</result>
+		</action>
+		<action name="WriteLeaveTime" class="csai.action.WriteLeaveTimeAction">
+			<result name="success">/jsp/askforleave.jsp</result>
+			<result name="input">/jsp/askforleave.jsp</result>
+		</action>
+		<action name="GetToDoList" class="csai.action.GetToDoListAction">
+			<result name="success">/jsp/todolist.jsp</result>
+		</action>
+		<action name="GetAlreadyDoneList" class="csai.action.GetAlreadyDoneListAction">
+			<result name="success">/jsp/alreadydonelist.jsp</result>
+		</action>
+		<action name="saveMonkey" class="mypack.BussinessService">
+			<result name="success">/jsp/askforleave.jsp</result>
+		</action>
+	</package>
+<!-- 	<package name="jsonPlugin" namespace="/json" extends="json-default">
+		<action name="GetMenuList" class="csai.action.ListAction">
+			<result type="json" name="SUCCESS">
+				<param name="menu">json</param>
+				<param name="root">返回跟数据</param>
+			</result>
+		</action>
+	</package> -->
+</struts>
