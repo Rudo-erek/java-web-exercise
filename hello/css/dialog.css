@@ -1,0 +1,66 @@
+.dialog-box {
+	position: relative;
+	top: 100px;
+	left: 400px;
+	height: 400px;
+	width: 600px;
+	z-index: 100;
+	box-shadow: 0 4px 4px #e0e0e0;
+	display: none;
+}
+
+.dialog-title-box {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	background-color: #6a7782;
+}
+
+.dialog-title-box-left {
+	position: absolute;
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 40px;
+	font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei";
+	text-align: center;
+	display: inline-block;
+	color: white;
+}
+
+.dialog-title-box-right {
+	position: absolute;
+	right: 0;
+	padding-right: 10px;
+	font-size: 16px;
+	line-height: 40px;
+	/*font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei";*/
+	text-align: center;
+	color: white;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.wrong-flag {
+	display: inline-block;
+	width: 20px;
+	height: 5px;
+	background: red;
+	line-height: 0;
+	font-size: 0;
+	vertical-align: middle;
+	-webkit-transform: rotate(45deg);
+}
+
+.wrong-flag:after {
+	content: "/";
+	display: block;
+	width: 20px;
+	height: 5px;
+	background: red;
+	-webkit-transform:rotate(-90deg);
+}
+
+
+.dialog-main {
+	text-align: center;
+}
