@@ -1,0 +1,135 @@
+.hidePage {
+	width: 100%;
+	filter: alpha(opacity=100);
+	opacity: 1;
+	display: block;
+	z-index: 2; 
+}
+.header {
+	/*border-radius: 5px; */
+	width: 100%;
+	height: 60px; 
+	background-color: #6c7d92;
+	/*box-shadow: #666 2px 2px 2px;*/
+}
+.topUser {
+	width: 100px;
+	height: 60px;
+	margin-left: 20px;
+}
+.header-left-pic {
+	margin-left: 5px;
+	width:24px; 
+	height:24px; 
+	margin-top:16px;
+}
+.header-left-name {
+	position: absolute; 
+	margin-left: 8px; 
+	color: #fff; 
+	width: auto;
+	font-size: 14px;
+	margin-top:18px;
+	font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei";
+	display: inline-block;
+}
+.head-left-arrow {
+	position: absolute;
+	margin-left: 48px;
+	margin-top: 12px;
+	display: none;
+}
+.userPop {
+  position: absolute;
+  background: #FFF;
+  border: #e0e0e0 solid 1px;
+  /*border-top: #e0e0e0 solid 2px;*/
+  /*top: inherit;*/
+  top: 52px;
+  left: 8px;
+  min-width: 120px;
+  height: 70px;
+  box-shadow: 0 5px 9px #e0e0e0;
+  color: #333333;
+  line-height: 35px;
+  font-size: 14px;
+  z-index: 90;
+  margin-top: 8px;
+  font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei";
+}
+.userPop ul {
+	position: absolute;
+	margin: 0 auto;
+	padding: 0px;
+	cursor: pointer;
+	list-style: none;
+}
+.userPop ul li {
+	padding-left: 20px;
+	width: 100%;
+}
+.menu-li a{
+	color: black;
+}
+.menu-li span {
+	margin-bottom: -2px;
+	margin-right: 10px;
+}
+.userPop ul li:hover {
+	background: #6c7d92;
+	color: white;
+}
+.userPop ul li:hover >a{
+	color: white;
+	cursor: pointer;
+}
+.menu-li.password span{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/head-edit.png) no-repeat;
+}
+.menu-li.password:hover span{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/head-edit-hover.png) no-repeat;
+}
+.menu-li.cancel span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/head-cancel.png) no-repeat;
+}
+.menu-li.cancel:hover span{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(../images/head-cancel-hover.png) no-repeat;
+}
+
+.menuList {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	font-size: 16px;
+	line-height: 16px;
+	font-family: "Microsoft YaHei",微软雅黑,"Microsoft JhengHei";
+	color: white;
+	display: inline-block;
+}
+
+.menuList a {
+	text-decoration: none;
+	color: white;
+}
+
+.menuList a:hover {
+	color: #7d5050;
+}
+
+.menuList span {
+	position: relative;
+	width: 60px;
+	margin-left: 30px;
+}
