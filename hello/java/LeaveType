@@ -1,0 +1,79 @@
+package csai.POJO;
+
+public class LeaveType {
+	public String to_do_Id; 
+	public String userID;
+	public String userName;
+	public String beginDate;
+	public String endDate;
+	public String writeTime;
+	public String done_time;
+	public String done_person;
+	public LeaveType() {
+
+	}
+	
+	public void setTo_do_Id(String to_do_Id) {
+		this.to_do_Id=to_do_Id;
+	}
+	
+	public String getTo_do_Id() {
+		return to_do_Id;
+	}
+	
+	public String getUserID() {
+		return userID;
+	}
+	
+	public void setUserID(String userID) {
+		this.userID=userID;
+	}
+	
+	public String getUserName() {
+		return userName;
+	}
+	
+	public void setUserName(String userName) {
+		this.userName=userName;
+	}
+	
+	public String getBeginDate() {
+		return beginDate;
+	}
+	
+	public void setBeginDate(String beginDate) {
+		this.beginDate=beginDate;
+	}
+	
+	public String getEndDate() {
+		return endDate;
+	}
+	
+	public void setEndDate(String endDate) {
+		this.endDate=endDate;
+	}
+	
+	public String getWriteTime() {
+		return writeTime;
+	}
+	
+	public void setWriteTime(String writeTime) {
+		this.writeTime=writeTime;
+	}
+	
+	public String getDone_time() {
+		return done_time;
+	}
+	
+	public void setDone_time(String done_time) {
+		this.done_time=done_time;
+	}
+	
+	public String getDone_person() {
+		return done_person;
+	}
+	
+	public void setDone_person(String done_person) {
+		this.done_person=done_person;
+	}
+}
